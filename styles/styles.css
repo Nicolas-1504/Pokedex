@@ -1,0 +1,238 @@
+@import 'variables.css';
+
+*{
+    box-sizing: border-box;
+    font-family: var(--tipography);
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    background-color: var(--thirdColor);
+}
+
+.container{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 5%;
+
+}
+
+.container__header{
+    align-items: center;
+    background-color: var(--secondaryColor);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.container__pokeball{
+    height: 25px;
+    width: 25px;
+}
+
+.container__title{
+    color: white;
+    font-size:  1.4rem;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.container__main{
+    display: flex;
+    background-color: var(--primaryColor);
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__pokemon{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+}
+
+.container__name-pokemon{
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 4px 0;
+}
+
+.container__name-pokemon h1{
+    font-size: 1.5rem;
+}
+
+.container__electric{
+    height: 40px;
+    width: 40px;
+}
+
+.img-main{
+    height: 120px; 
+}
+
+.prueba{
+    position: relative;
+}
+
+.characteristics{
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    color: var(--secondaryColor);
+    justify-content: space-evenly;
+    display: flex;
+    padding: 60px 0 20px 0;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.characteristics-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.characteristics-container p{
+    margin-bottom: 12px;
+}
+
+.characteristics-container1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.characteristics-container1 p{
+    margin-bottom: 12px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.fotter-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.img-container{
+    background-color: var(--thirdColor);
+    border-radius: 10px;
+    padding: 4px;
+    margin: 2% 0 5% 16%;
+    cursor: pointer;
+}
+
+.img-container:hover{
+    background-color: var(--secondaryColor);
+}
+
+.other{
+    margin: 10px 0 10px 0;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (min-width: 400px) {
+    .characteristics{
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .container{
+        margin: 2%;
+    }
+
+    .footer{
+        justify-content: center;
+        flex-direction: row;
+        padding: 20px 20% 10px 0;
+    }
+
+    .fotter-container{
+        flex-wrap: nowrap;
+    }
+
+    .container__main{
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 30px 0 30px 0;
+        justify-content: space-evenly;
+    }
+
+    .container__pokemon{
+        position: static;
+        margin: 0;
+        width: 40%;
+    }
+
+    .container__header{
+        padding: 10px 0 10px 20px;
+        justify-content: flex-start;
+    }
+
+    .prueba{
+        position: static;
+    }
+
+    .characteristics{
+        margin: 0;
+        width: 40%;
+        justify-content: space-evenly;
+        padding: 80px 0;
+    }
+
+    .img-main{
+        height: 200px;
+    }
+
+    .container__name-pokemon{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container__pokemon{
+        width: 25%;
+        margin-right: 50px;
+    }
+
+    .characteristics{
+        width: 25%;
+    }
+
+    .container__main{
+        justify-content: center;
+    }
+
+    .img-main{
+        height: 230px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .img-main{
+        height: 250px;
+    }    
+}
